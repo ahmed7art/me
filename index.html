@@ -2,61 +2,54 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>أفضل موظف 2025</title>
+  <title>محمد العبيدي</title>
   <style>
     body {
-      font-family: "Tahoma", sans-serif;
-      background: #f9f9f9;
       margin: 0;
-      padding: 0;
-      text-align: center;
-      direction: rtl;
+      display: flex;
+      height: 100vh;
+      background: #f9f9f9;
+      font-family: 'Tahoma', sans-serif;
     }
-
-    header {
-      background: linear-gradient(90deg, #4CAF50, #2E7D32);
-      color: white;
-      padding: 20px;
-      font-size: 24px;
-      font-weight: bold;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    .image {
+      flex: 2;
+      display: flex;
     }
-
-    .container {
-      margin-top: 40px;
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* يخلي الصورة باينة كاملة بدون قص */
     }
-
-    .employee-img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid #4CAF50;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    h2 {
-      margin-top: 20px;
-      font-size: 22px;
+    .text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(8px);
       color: #333;
     }
-
-    p {
-      margin-top: 10px;
-      font-size: 18px;
-      color: #555;
+    .text h1 {
+      font-size: 2rem;
+      color: #b8860b; /* ذهبي راقي */
+      margin: 0 0 10px;
+    }
+    .text p {
+      font-size: 1.2rem;
+      margin: 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    🌟 أفضل موظف لسنة 2025 🌟
-  </header>
-
-  <div class="container">
-    <img src="friend.jpg" alt="صورة الموظف" class="employee-img">
-    <h2>أحمد يوسف</h2>
-    <p>شكراً لجهودك المميزة خلال هذه السنة 🎉</p>
+  <div class="image">
+    <img src="friend.jpg" alt="صورة محمد">
+  </div>
+  <div class="text">
+    <h1>محمد العبيدي</h1>
+    <p>نجم التحلية لشركة سرت 2025</p>
+    <p>من أفضل موظفي الشركة</p>
   </div>
 </body>
 </html>
