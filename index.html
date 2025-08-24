@@ -3,28 +3,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>محمد العبيدي</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
-      background: #0f172a;
+      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      color: #f8fafc;
+      background: #f8fafc;
     }
     .container {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      width: 95%;
+      width: 90%;
       max-width: 1200px;
-      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
       overflow: hidden;
-      background: #ffffff0d;
-      border: 1px solid #ffffff22;
-      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      backdrop-filter: blur(12px);
     }
     .photo img {
       width: 100%;
@@ -33,13 +32,24 @@
       display: block;
     }
     .text {
-      padding: 30px;
+      padding: 40px 30px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-size: 1.4rem;
+      color: #1f2937;
+    }
+    .text h1 {
+      margin: 0 0 15px;
+      font-size: 2rem;
       font-weight: 900;
-      line-height: 1.8;
+      color: #111827;
+    }
+    .text p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #374151;
+      line-height: 1.6;
     }
     @media (max-width: 800px) {
       .container { grid-template-columns: 1fr; }
@@ -53,9 +63,9 @@
       <img src="friend.jpg" alt="محمد العبيدي">
     </div>
     <div class="text">
-      <div>محمد العبيدي</div>
-      <div>نجم التحلية لشركة سرت لعام 2025</div>
-      <div>من أفضل موظفي الشركة</div>
+      <h1>محمد العبيدي</h1>
+      <p>نجم التحلية لشركة سرت لعام 2025</p>
+      <p>من أبرز موظفي الشركة</p>
     </div>
   </div>
 </body>
