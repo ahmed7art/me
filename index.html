@@ -53,9 +53,46 @@
     }
 
     main p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       line-height: 1.8;
       color: #444;
+      margin-bottom: 3rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 0.9rem 2.2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      border-radius: 12px;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .top-btn {
+      background: linear-gradient(120deg, #1e88e5, #42a5f5);
+    }
+
+    .top-btn:hover {
+      background: linear-gradient(120deg, #1565c0, #0d47a1);
+    }
+
+    .opinion-btn {
+      background: linear-gradient(120deg, #43a047, #66bb6a);
+    }
+
+    .opinion-btn:hover {
+      background: linear-gradient(120deg, #2e7d32, #388e3c);
     }
 
     footer {
@@ -63,7 +100,7 @@
       padding: 2rem 1rem;
       background: #0d47a1;
       color: #f1f1f1;
-      margin-top: 3rem;
+      margin-top: 4rem;
       font-size: 0.9rem;
     }
   </style>
@@ -71,18 +108,20 @@
 <body>
   <header>
     <h1>مرصد سرت</h1>
-    <p>منصة شخصية لمتابعة وتحليل ما يتعلق بشركة سرت</p>
+    <p>متابعة وتحليل أخبار وآراء الشركة</p>
   </header>
 
   <main>
     <h2>مرحباً بك</h2>
     <p>
-      نرحب بك في <strong>مرصد سرت</strong>،  
-      موقع شخصي يهدف إلى تقديم لمحات تحليلية، 
-      أخبار، وآراء تخص شركة سرت.  
-      المنصة غير رسمية وإنما مبادرة فردية 
-      لمشاركة المعرفة والانطباعات حول الشركة.  
+      نرحب بكم في <strong>مرصد سرت</strong>،  
+      موقع يعرض محتوى متكامل عن أخبار الشركة وآراء الموظفين.
     </p>
+
+    <div class="buttons">
+      <a href="Top.html" class="top-btn">أفضل موظفين الشركة</a>
+      <a href="Opinion.html" class="opinion-btn">آراء الموظفين</a>
+    </div>
   </main>
 
   <footer>
