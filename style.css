@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+
+:root {
+  --bg: #14171c;
+  --bg-radial: #1b1f26;
+  --card-bg: #1c2028;
+  --card-border: #2b313d;
+  --ink: #eef0f3;
+  --ink-soft: #aeb5c2;
+  --ink-mute: #6d7482;
+}
+
+/* ---- reset ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
+  background:
+    radial-gradient(ellipse 900px 600px at 50% -10%, #232a35 0%, transparent 60%),
+    var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- layout ---- */
+.page {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 56px 48px;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.03) inset,
+    0 30px 60px -20px rgba(0,0,0,0.55);
+}
+
+/* ---- signature mark ---- */
+.mark {
+  width: 46px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #5b7fc7, #7d9be0);
+  margin-bottom: 28px;
+}
+
+/* ---- typography ---- */
+.eyebrow {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7d9be0;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 900;
+  color: var(--ink);
+  max-width: 22ch;
+}
+
+.divider {
+  height: 1px;
+  background: var(--card-border);
+  margin: 32px 0;
+}
+
+.content p {
+  font-size: 16.5px;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+
+.content .lead {
+  color: var(--ink);
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+/* ---- contact block ---- */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.contact-label {
+  font-size: 14px;
+  color: var(--ink-mute);
+  font-weight: 500;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #232a35;
+  border: 1px solid #333b48;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 11px;
+  font-weight: 700;
+  font-size: 15.5px;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.contact-link:hover {
+  background: #2a323f;
+  border-color: #4a5568;
+  transform: translateY(-1px);
+}
+
+.contact-link:focus-visible {
+  outline: 2px solid #7d9be0;
+  outline-offset: 3px;
+}
+
+.wa-icon {
+  width: 19px;
+  height: 19px;
+  fill: #4ec97a;
+  flex-shrink: 0;
+}
+
+/* ---- footnote ---- */
+.footnote {
+  margin-top: 22px;
+  font-size: 13px;
+  color: var(--ink-mute);
+  text-align: center;
+}
+
+/* ---- responsive ---- */
+@media (max-width: 520px) {
+  .card {
+    padding: 40px 26px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 15.5px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ---- reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  .contact-link {
+    transition: none;
+  }
+}
